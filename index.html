@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="description" content="2026届高考倒计时，提供精准的高考时间计算、备考技巧和学习资源">
     <meta name="keywords" content="高考倒计时,2026高考,高考备考,高考时间,2026高考倒计时,gaokaodaojishi,gkdjs">
-    <link rel="shortcut icon" href="https://ys.mihoyo.com/main/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "2026年高考",
+      "startDate": "2026-06-07T09:00:00",
+      "endDate": "2026-06-08T17:00:00",
+      "description": "全国普通高等学校招生统一考试"
+    }
+    </script>
     <script>
         tailwind.config = {
             theme: {
@@ -41,6 +52,7 @@
     <!-- 预加载关键资源 -->
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
 </head>
+
 <body class="font-inter bg-gray-50 min-h-screen flex flex-col">
     <!-- 导航栏 -->
     <nav class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300" id="navbar">
@@ -63,7 +75,8 @@
             <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
                 <a href="#home" class="text-gray-600 hover:text-primary transition-colors duration-200 py-2">首页</a>
                 <a href="#tips" class="text-gray-600 hover:text-primary transition-colors duration-200 py-2">备考技巧</a>
-                <a href="#resources" class="text-gray-600 hover:text-primary transition-colors duration-200 py-2">学习资源</a>
+                <a href="#resources"
+                    class="text-gray-600 hover:text-primary transition-colors duration-200 py-2">学习资源</a>
                 <a href="#about" class="text-gray-600 hover:text-primary transition-colors duration-200 py-2">关于</a>
             </div>
         </div>
@@ -72,33 +85,40 @@
     <!-- 主要内容 -->
     <main class="flex-grow">
         <!-- 倒计时部分 -->
-        <section id="home" class="bg-gradient-gaokao text-white py-20 md:py-32" style="background-image: url(https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/29234c458d043b7c59c4888b4975793b_4792077123903287401.png);background-repeat: no-repeat;background-position: center;background-size: cover;">
+        <section id="home" class="bg-gradient-gaokao text-white py-20 md:py-32"
+            style="background-image: url(https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/29234c458d043b7c59c4888b4975793b_4792077123903287401.png);background-repeat: no-repeat;background-position: center;background-size: cover;">
             <div class="container mx-auto px-4 text-center">
                 <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-4 text-shadow">2026届高考倒计时</h1>
                 <p class="text-lg md:text-xl opacity-90 mb-10">距离2026年6月7日高考还有</p>
-                
+
                 <!-- 倒计时卡片 -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto">
-                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 shadow-lg" style="background-image: url(https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/5977b73aea3fc3d5ad70cb88e908e180_4639542518805072623.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 shadow-lg"
+                        style="background-image: url(https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/5977b73aea3fc3d5ad70cb88e908e180_4639542518805072623.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;">
                         <div class="text-4xl md:text-6xl font-bold mb-2" id="days">00</div>
                         <div class="text-sm md:text-base uppercase tracking-wider opacity-80">天</div>
                     </div>
-                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 shadow-lg" style="background-image: url(https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/181358b01e2dbaaea94508f2dd10facc_2991135952706133074.png);background-repeat: no-repeat;background-position: center;background-size: cover;">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 shadow-lg"
+                        style="background-image: url(https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/181358b01e2dbaaea94508f2dd10facc_2991135952706133074.png);background-repeat: no-repeat;background-position: center;background-size: cover;">
                         <div class="text-4xl md:text-6xl font-bold mb-2" id="hours">00</div>
                         <div class="text-sm md:text-base uppercase tracking-wider opacity-80">时</div>
                     </div>
-                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 shadow-lg" style="background-image: url(https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/6d3b68a6c284b294f0a7da19bbfbd342_9194179125665511147.png);background-repeat: no-repeat;background-position: center;background-size: cover;">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 shadow-lg"
+                        style="background-image: url(https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/6d3b68a6c284b294f0a7da19bbfbd342_9194179125665511147.png);background-repeat: no-repeat;background-position: center;background-size: cover;">
                         <div class="text-4xl md:text-6xl font-bold mb-2" id="minutes">00</div>
                         <div class="text-sm md:text-base uppercase tracking-wider opacity-80">分</div>
                     </div>
-                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 shadow-lg" style="background-image: url(https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/48b51861fcef9fa8738c429bbb57b1ea_4503023957228740096.png);background-repeat: no-repeat;background-position: center;background-size: cover;">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 shadow-lg"
+                        style="background-image: url(https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/48b51861fcef9fa8738c429bbb57b1ea_4503023957228740096.png);background-repeat: no-repeat;background-position: center;background-size: cover;">
                         <div class="text-4xl md:text-6xl font-bold mb-2" id="seconds">00</div>
                         <div class="text-sm md:text-base uppercase tracking-wider opacity-80">秒</div>
                     </div>
                 </div>
-                
+
                 <div class="mt-10 md:mt-16">
-                    <button class="bg-white text-primary font-medium px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50" onclick="window.location.href='https://space.bilibili.com/401742377'">
+                    <button
+                        class="bg-white text-primary font-medium px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
+                        onclick="window.location.href='https://space.bilibili.com/401742377'">
                         <i class="fa fa-calendar-plus-o mr-2"></i>添加到日历
                     </button>
                 </div>
@@ -109,26 +129,32 @@
         <section id="tips" class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">高考备考技巧</h2>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-gray-100">
-                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4" style="background-image: url(https://moetoutiao.com/wp-content/uploads/2022/05/img_62767849ca7dd.jpg);background-repeat: no-repeat;background-size: contain;background-position: center;">
+                    <div
+                        class="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-gray-100">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+                            style="background-image: url(https://moetoutiao.com/wp-content/uploads/2022/05/img_62767849ca7dd.jpg);background-repeat: no-repeat;background-size: contain;background-position: center;">
                             <i class="fa fa-clock-o text-primary text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-dark">科学规划时间</h3>
                         <p class="text-gray-600">制定详细的学习计划，合理分配各科学习时间，确保全面复习。每天保持8小时睡眠，劳逸结合。</p>
                     </div>
-                    
-                    <div class="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-gray-100">
-                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4" style="background-image: url(https://moetoutiao.com/wp-content/uploads/2022/05/img_6276784ab0e28.jpg);background-repeat: no-repeat;background-size: contain;background-position: center;">
+
+                    <div
+                        class="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-gray-100">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+                            style="background-image: url(https://moetoutiao.com/wp-content/uploads/2022/05/img_6276784ab0e28.jpg);background-repeat: no-repeat;background-size: contain;background-position: center;">
                             <i class="fa fa-book text-primary text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-dark">系统复习方法</h3>
                         <p class="text-gray-600">采用三轮复习法：全面基础复习、专题深化突破、综合模拟冲刺。重视错题整理和知识点串联。</p>
                     </div>
-                    
-                    <div class="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-gray-100">
-                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4" style="background-image: url(https://tse1-mm.cn.bing.net/th/id/OIP-C.G_X25Kn63SV1KY0gEpzcAQHaHa?rs=1&pid=ImgDetMain);background-repeat: no-repeat;background-size: contain;background-position: center;">
+
+                    <div
+                        class="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-gray-100">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+                            style="background-image: url(https://tse1-mm.cn.bing.net/th/id/OIP-C.G_X25Kn63SV1KY0gEpzcAQHaHa?rs=1&pid=ImgDetMain);background-repeat: no-repeat;background-size: contain;background-position: center;">
                             <i class="fa fa-heart text-primary text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-3 text-dark">调整心态策略</h3>
@@ -142,37 +168,46 @@
         <section id="resources" class="py-16 bg-gray-50">
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">精选学习资源</h2>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- 图片使用WebP格式并压缩，添加loading="lazy" -->
-                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
-                        <img src="https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/44867158ce9c128cc1a6caa22d84e856_3721326683685343708.jpg" alt="高考复习资料" class="w-full h-48 object-cover loading="lazy">
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
+                        <img src="https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/44867158ce9c128cc1a6caa22d84e856_3721326683685343708.jpg"
+                            alt="高考复习资料" class="w-full h-48 object-cover loading=" lazy">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2 text-dark">高考历年真题解析</h3>
                             <p class="text-gray-600 mb-4">收集整理近10年高考真题及详细解析，帮助学生熟悉考试题型和命题规律。</p>
-                            <a href="https://www.bilibili.com/video/BV1D4U6Y4Eb5/" class="inline-flex items-center text-primary font-medium hover:underline">
+                            <a href="https://www.bilibili.com/video/BV1D4U6Y4Eb5/"
+                                class="inline-flex items-center text-primary font-medium hover:underline">
                                 查看资源 <i class="fa fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </div>
-                    
-                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
-                        <img src="https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/51fe00df0b0bf82a5e02827031d52693_7347917973596343451.png" alt="高考复习资料" class="w-full h-48 object-cover loading="lazy">
+
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
+                        <img src="https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/51fe00df0b0bf82a5e02827031d52693_7347917973596343451.png"
+                            alt="高考复习资料" class="w-full h-48 object-cover loading=" lazy">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2 text-dark">高中知识点总结</h3>
                             <p class="text-gray-600 mb-4">各科核心知识点全面总结，重点难点深度解析，助力系统复习和查漏补缺。</p>
-                            <a href="https://www.bilibili.com/video/BV15c411r7BF/" class="inline-flex items-center text-primary font-medium hover:underline">
+                            <a href="https://www.bilibili.com/video/BV15c411r7BF/"
+                                class="inline-flex items-center text-primary font-medium hover:underline">
                                 查看资源 <i class="fa fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </div>
-                    
-                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
-                        <img src="https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/0ed742bbc80091fc0eeda0192168eb97_7049660086303700360.png" alt="高考复习资料" class="w-full h-48 object-cover loading="lazy">
+
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
+                        <img src="https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/0ed742bbc80091fc0eeda0192168eb97_7049660086303700360.png"
+                            alt="高考复习资料" class="w-full h-48 object-cover loading=" lazy">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2 text-dark">名师视频课程</h3>
                             <p class="text-gray-600 mb-4">名校一线教师录制的高清视频课程，针对高考重点难点进行详细讲解。</p>
-                            <a href="https://www.bilibili.com/video/BV13SR5YMEis/" class="inline-flex items-center text-primary font-medium hover:underline">
+                            <a href="https://www.bilibili.com/video/BV13SR5YMEis/"
+                                class="inline-flex items-center text-primary font-medium hover:underline">
                                 查看资源 <i class="fa fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -182,7 +217,7 @@
         </section>
 
         <!-- 关于部分 -->
-        <section id="about" class="py-16 bg-white">
+        <!-- <section id="about" class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="md:w-1/2">
@@ -200,6 +235,43 @@
                     </div>
                     <div class="md:w-1/2">
                         <img src="https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/7ca7b6a40fc5bf8d98872dd56751bcf3_5978798415162515588.jpg" alt="高考备考" class="w-full rounded-xl shadow-lg loading="lazy" style="background-image: url(https://upload-bbs.miyoushe.com/upload/2025/05/24/449184704/7ca7b6a40fc5bf8d98872dd56751bcf3_5978798415162515588.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- 关于部分 -->
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-dark">关于高考倒计时</h2>
+                        <p class="text-gray-600 mb-4">本网站致力于为2026届高考生提供精准的高考倒计时服务，帮助考生合理安排学习时间，科学备考。</p>
+                        <p class="text-gray-600 mb-6">我们提供了丰富的学习资源和备考技巧，同时也关注考生的心理健康，希望能成为考生备考路上的得力助手。</p>
+                        <div class="flex space-x-4">
+                            <a href="https://ys.mihoyo.com/"
+                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors duration-300"
+                                style="background-image: url(https://tse4-mm.cn.bing.net/th/id/OIP-C.emNIW2iz3vV2KKWC8NLmPQAAAA?rs=1&pid=ImgDetMain);background-repeat: no-repeat;background-size: contain;background-position: center;">
+                            </a>
+                            <a href="https://sr.mihoyo.com/"
+                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors duration-300"
+                                style="background-image: url(https://moetoutiao.com/wp-content/uploads/2022/05/img_6276784b28da5.jpg);background-repeat: no-repeat;background-size: contain;background-position: center;">
+                            </a>
+                            <a href="https://zzz.mihoyo.com/main/"
+                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors duration-300"
+                                style="background-image: url(https://upload-bbs.mihoyo.com/upload/2022/05/16/18153850/c3ad15e5db8b4c48bd4273c3779fcce2_286754381935545822.png?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png);background-repeat: no-repeat;background-size: contain;background-position: center;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 relative flex-shrink-0 w-full">
+                        <div class="relative aspect-[499/730] md:h-[1200px] w-full rounded-xl shadow-lg overflow-hidden">
+                            <!-- 图片轮播容器 -->
+                            <div id="imageSlider" class="relative w-full h-full">
+                                <!-- 默认显示的第一张图片 -->
+                                <img src="https://upload-bbs.miyoushe.com/upload/2025/05/25/449184704/56dcb9ea1b52d66e449a6e8b412a63f3_2646678086354705349.jpg"
+                                    alt="高考备考"
+                                    class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -223,21 +295,26 @@
                         <ul class="space-y-2 text-gray-400">
                             <li><a href="#home" class="hover:text-primary transition-colors duration-200">首页</a></li>
                             <li><a href="#tips" class="hover:text-primary transition-colors duration-200">备考技巧</a></li>
-                            <li><a href="#resources" class="hover:text-primary transition-colors duration-200">学习资源</a></li>
+                            <li><a href="#resources" class="hover:text-primary transition-colors duration-200">学习资源</a>
+                            </li>
                             <li><a href="#about" class="hover:text-primary transition-colors duration-200">关于我们</a></li>
                         </ul>
                     </div>
                     <div>
                         <h3 class="text-lg font-semibold mb-3">联系我们</h3>
                         <ul class="space-y-2 text-gray-400">
-                            <li class="flex items-center"><i class="fa fa-envelope-o mr-2 text-primary"></i> 2303058330@qq.com</li>
-                            <li class="flex items-center" onclick="window.location.href='https://space.bilibili.com/1085438816?spm_id_from=333.1007.0.0'"><i class="fa fa-phone mr-2 text-primary"></i> bilibili</li>
+                            <li class="flex items-center"><i class="fa fa-envelope-o mr-2 text-primary"></i>
+                                2303058330@qq.com</li>
+                            <li class="flex items-center"
+                                onclick="window.location.href='https://space.bilibili.com/1085438816?spm_id_from=333.1007.0.0'">
+                                <i class="fa fa-phone mr-2 text-primary"></i> bilibili
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
-                <p>Copyright 高考倒计时  豫ICP备 2147483647 号</p>
+                <p>Copyright 高考倒计时 豫ICP备 2147483647 号</p>
             </div>
         </div>
     </footer>
@@ -245,42 +322,42 @@
     <script>
         // 高考日期：2026年6月7日
         const gaokaoDate = new Date('2026-06-07T09:00:00').getTime();
-        
+
         // 更新倒计时
         function updateCountdown() {
             const now = new Date().getTime();
             const distance = gaokaoDate - now;
-            
+
             // 时间计算
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
+
             // 显示结果
             document.getElementById('days').innerText = days.toString().padStart(2, '0');
             document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
             document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
             document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
         }
-        
+
         // 初始化倒计时
         updateCountdown();
         setInterval(updateCountdown, 1000);
-        
+
         // 移动端菜单切换
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-        
+
         // 导航栏滚动效果
         const navbar = document.getElementById('navbar');
-        
+
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 10) {
+            if(window.scrollY > 10) {
                 navbar.classList.add('py-2');
                 navbar.classList.remove('py-3');
                 navbar.classList.add('shadow-lg');
@@ -290,50 +367,121 @@
                 navbar.classList.remove('shadow-lg');
             }
         });
-        
+
         // 平滑滚动
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
+
+                if(targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
+
                     // 关闭移动菜单
-                    if (!mobileMenu.classList.contains('hidden')) {
+                    if(!mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
                     }
                 }
             });
         });
-        
+
         // 懒加载图片的函数
         document.addEventListener("DOMContentLoaded", function() {
             const lazyImages = [].slice.call(document.querySelectorAll("img.loading='lazy'"));
-            
-            if ("IntersectionObserver" in window) {
+
+            if("IntersectionObserver" in window) {
                 let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
                     entries.forEach(function(entry) {
-                        if (entry.isIntersecting) {
+                        if(entry.isIntersecting) {
                             let lazyImage = entry.target;
                             lazyImage.src = lazyImage.dataset.src;
                             lazyImageObserver.unobserve(lazyImage);
                         }
                     });
                 });
-                
+
                 lazyImages.forEach(function(lazyImage) {
                     lazyImageObserver.observe(lazyImage);
                 });
             }
         });
     </script>
+    <script>
+        // 图片轮播功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 图片列表
+            const images = [
+                'https://upload-bbs.miyoushe.com/upload/2025/05/25/449184704/56dcb9ea1b52d66e449a6e8b412a63f3_2646678086354705349.jpg',
+                'https://upload-bbs.miyoushe.com/upload/2025/05/25/449184704/3512ee5366f464d7cb51f7f6770c7396_7848456628714907447.jpg', // 替换为实际图片URL
+                'https://upload-bbs.miyoushe.com/upload/2025/05/25/449184704/b9ca68b02b9527b62554b1706a36afa5_7431948553572508509.jpg'  // 替换为实际图片URL
+            ];
+
+            const slider = document.getElementById('imageSlider');
+            const dots = document.querySelectorAll('.slider-dot');
+            let currentIndex = 0;
+            let sliderInterval;
+
+            // 初始化第一张图片
+            updateSlider();
+
+            // 开始自动轮播
+            startSlider();
+
+            // 点击指示器切换图片
+            dots.forEach(dot => {
+                dot.addEventListener('click', function() {
+                    currentIndex = parseInt(this.dataset.index);
+                    updateSlider();
+                    resetSlider();
+                });
+            });
+
+            // 更新轮播图
+            function updateSlider() {
+                // 移除当前所有图片
+                while(slider.firstChild) {
+                    slider.removeChild(slider.firstChild);
+                }
+
+                // 添加当前图片（透明度为1）
+                const currentImg = document.createElement('img');
+                currentImg.src = images[currentIndex];
+                currentImg.alt = "高考备考";
+                currentImg.className = "absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000";
+                slider.appendChild(currentImg);
+
+                // 更新指示器状态
+                dots.forEach((dot, index) => {
+                    if(index === currentIndex) {
+                        dot.classList.add('opacity-100');
+                        dot.classList.remove('opacity-50');
+                    } else {
+                        dot.classList.add('opacity-50');
+                        dot.classList.remove('opacity-100');
+                    }
+                });
+            }
+
+            // 开始轮播
+            function startSlider() {
+                sliderInterval = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    updateSlider();
+                }, 5000); // 每5秒切换一次
+            }
+
+            // 重置轮播计时器
+            function resetSlider() {
+                clearInterval(sliderInterval);
+                startSlider();
+            }
+        });
+    </script>
 </body>
+
 </html>
-    
