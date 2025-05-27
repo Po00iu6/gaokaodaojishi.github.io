@@ -1,4 +1,10 @@
-<?xml version="1.0"?>
-<users>
-	<user>E636B33C63F884A1E40D913638E2424B</user>
-</users>
+<?xml version="1.0" encoding="UTF-8"?>
+<siteMap xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <users>
+        <user>E636B33C63F884A1E40D913638E2424B</user>
+    </users>
+    <siteMapNode url="https://po00iu6.github.io/gaokaodaojishi.github.io/" title="2026高考倒计时">
+        <siteMapNode url="https://po00iu6.github.io/gaokaodaojishi.github.io/#resources" title="学习资源" description="为高考加油而战！" />
+        <siteMapNode url="https://po00iu6.github.io/gaokaodaojishi.github.io/#about" title="关于本网站" description="本网站只是一个学生自制的小站~" />
+    </siteMapNode>
+</siteMap>
