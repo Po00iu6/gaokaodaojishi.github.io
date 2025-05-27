@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<siteMap xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <users>
-        <user>E636B33C63F884A1E40D913638E2424B</user>
+    <user>E636B33C63F884A1E40D913638E2424B</user>
     </users>
-    <siteMapNode url="https://po00iu6.github.io/gaokaodaojishi.github.io/" title="2026高考倒计时">
-        <siteMapNode url="https://po00iu6.github.io/gaokaodaojishi.github.io/#resources" title="学习资源" description="为高考加油而战！" />
-        <siteMapNode url="https://po00iu6.github.io/gaokaodaojishi.github.io/#about" title="关于本网站" description="本网站只是一个学生自制的小站~" />
-    </siteMapNode>
-</siteMap>
+  <!-- 首页 -->
+  <url>
+    <loc>https://po00iu6.github.io/gaokaodaojishi.github.io/</loc>
+    <lastmod>2025-05-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- 备考技巧页面 -->
+  <url>
+    <loc>https://po00iu6.github.io/gaokaodaojishi.github.io/#tips</loc>
+    <lastmod>2025-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 学习资源页面 -->
+  <url>
+    <loc>https://po00iu6.github.io/gaokaodaojishi.github.io/#resources</loc>
+    <lastmod>2025-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 关于页面 -->
+  <url>
+    <loc>https://po00iu6.github.io/gaokaodaojishi.github.io/#about</loc>
+    <lastmod>2025-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
