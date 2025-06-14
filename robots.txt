@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://po00iu6.github.io/gaokaodaojishi.github.io/sitemap.xml
